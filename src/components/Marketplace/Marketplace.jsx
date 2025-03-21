@@ -10,7 +10,7 @@ const listings = [
     price: "$6,100",
     location: "Nashville, TN",
     miles: "120K miles",
-    img: "https://via.placeholder.com/300x200", // Replace with actual images
+    img: "https://via.placeholder.com/300x200",
   },
   {
     id: 2,
