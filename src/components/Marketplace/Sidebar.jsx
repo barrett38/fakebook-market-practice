@@ -18,6 +18,7 @@ const Sidebar = () => {
         <li>Selling</li>
       </ul>
       <button className="create-listing-btn">+ Create New Listing</button>
+      <button className="create-listing-btn">Create multiple listings</button>
     </div>
   );
 };
