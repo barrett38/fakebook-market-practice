@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import ListingCard from "./ListingCard";
-import "../styles/styles.css";
+import "./styles.css";
 
 const listings = [
   {
