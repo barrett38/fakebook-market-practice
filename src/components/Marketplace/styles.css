@@ -16,6 +16,7 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .sidebar {
@@ -31,14 +32,6 @@ body {
   margin-bottom: 10px;
 }
 
-.search-bar {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -48,22 +41,33 @@ body {
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
-  /* transition: background 0.3s; */
+  font-size: 18px;
 }
 
 .sidebar ul li:hover {
   background: var(--Facebook-Gray);
 }
 
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--Facebook-Gray);
+  border-radius: 20px;
+  background-color: var(--Facebook-Gray);
+  font-size: 16px;
+}
+
 .create-listing-btn {
   width: 100%;
-  background: var(--Facebook-Bright-Blue);
-  color: white;
+  background: #e5eefa;
+  color: var(--Facebook-Bright-Blue);
   padding: 10px;
   border: none;
   border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .create-listing-btn:hover {
@@ -115,4 +119,34 @@ body {
 .listing-details {
   font-size: 12px;
   color: var(--Facebook-Text-Gray);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    min-height: auto; /* Adjust height */
+    border-right: none; /* Remove border */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+  }
+
+  .content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .listings {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* Adjust grid for smaller screens */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .search-bar {
+    width: 100%; /* Full width for search bar */
+  }
 }
