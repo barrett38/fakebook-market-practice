@@ -141,6 +141,7 @@ body {
 }
 
 /* Mobile Styles */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -163,6 +164,6 @@ body {
   }
 
   .search-bar {
-    width: 100%;
+    width: 70%;
   }
 }
