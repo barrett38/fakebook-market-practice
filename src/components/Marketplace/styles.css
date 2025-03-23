@@ -17,7 +17,7 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
 }
 
 .sidebar {
@@ -143,29 +143,26 @@ body {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack sidebar and content vertically */
+    flex-direction: column;
   }
 
   .sidebar {
-    width: 100%; /* Full width for sidebar */
-    min-height: auto; /* Adjust height */
-    border-right: none; /* Remove border */
-    border-bottom: 1px solid #ddd; /* Add bottom border */
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
   }
 
   .content {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
 
   .listings {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(150px, 1fr)
-    ); /* Adjust grid for smaller screens */
-    gap: 10px; /* Reduce gap */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
   }
 
   .search-bar {
-    width: 100%; /* Full width for search bar */
+    width: 100%;
   }
 }
