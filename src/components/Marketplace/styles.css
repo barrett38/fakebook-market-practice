@@ -104,13 +104,13 @@ body {
 }
 
 /* Listings */
+
 .listings {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
-/* Listing Card */
 .listing-card {
   background: var(--Facebook-White);
   padding: 10px;
@@ -165,5 +165,13 @@ body {
 
   .search-bar {
     width: 70%;
+  }
+
+  .create-listing-btn {
+    width: 80%;
+  }
+
+  .create-mult-listing-btn {
+    width: 80%;
   }
 }
