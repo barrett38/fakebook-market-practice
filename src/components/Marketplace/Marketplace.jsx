@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import ListingCard from "./ListingCard";
 import "./styles.css";
@@ -30,7 +31,14 @@ const Marketplace = () => {
         <h2>Today's Picks</h2>
         <div className="listings">
           {listings.map((listing) => (
-            <ListingCard key={listing.id} listing={listing} />
+            <Link
+              key={listing.id}
+              to={`/details/${listing.id}`}
+              state={{ listing }}
+              className="listing-link"
+            >
+              <ListingCard listing={listing} />
+            </Link>
           ))}
         </div>
       </div>

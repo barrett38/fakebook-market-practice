@@ -156,6 +156,22 @@ body {
   color: var(--Facebook-Blue);
 }
 
+/* Listing page */
+
+.listing-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.details-container {
+  padding: 20px;
+}
+
+.details-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Mobile Styles */
 
 @media (max-width: 768px) {

@@ -17,3 +17,9 @@ Font is downloaded in Public. Font Import example below:
   font-style: normal;
 }
 ```
+
+# Installations needed
+
+```sh
+npm install react-router-dom
+```
