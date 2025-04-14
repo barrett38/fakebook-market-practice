@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./styles.css";
+
+// Icons for default, unselected states
 import selectedBrowseAllIcon from "./pictures/selected/sel-browse-all.png";
-import unselectedBrowseAllIcon from "./pictures/unselected/unsel-browse-all.png";
-
 import selectedNotificationsIcon from "./pictures/selected/sel-notifications.png";
-import unselectedNotificationsIcon from "./pictures/unselected/unsel-notifications.png";
-
 import selectedInboxIcon from "./pictures/selected/sel-inbox.png";
-import unselectedInboxIcon from "./pictures/unselected/unsel-inbox.png";
-
 import selectedBuyingIcon from "./pictures/selected/sel-buying.png";
-import unselectedBuyingIcon from "./pictures/unselected/unsel-buying.png";
-
 import selectedSellingIcon from "./pictures/selected/sel-selling.png";
+
+// Icons for selected states
+import unselectedBrowseAllIcon from "./pictures/unselected/unsel-browse-all.png";
+import unselectedNotificationsIcon from "./pictures/unselected/unsel-notifications.png";
+import unselectedInboxIcon from "./pictures/unselected/unsel-inbox.png";
+import unselectedBuyingIcon from "./pictures/unselected/unsel-buying.png";
 import unselectedSellingIcon from "./pictures/unselected/unsel-selling.png";
 
 const Sidebar = () => {
