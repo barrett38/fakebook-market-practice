@@ -6,7 +6,13 @@
 - Facebook-White: #FEFEFE
 - Facebook-Green: #65b543
 
-Font is downloaded in Public. Font Import example below:
+# Installations needed
+
+```sh
+npm install react-router-dom
+```
+
+Font is downloaded in Public. Example of how to import Font Import example below:
 
 ```sh
 @font-face {
@@ -15,11 +21,19 @@ Font is downloaded in Public. Font Import example below:
     format("truetype");
   font-weight: 400;
   font-style: normal;
-}
 ```
 
-# Installations needed
+Example of how to implement ListingDetails with Market Main page:
 
 ```sh
-npm install react-router-dom
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Marketplace />} />
+        <Route path="/details/:id" element={<ListingDetails />} />
+      </Routes>
+    </Router>
+  );
+};
 ```
