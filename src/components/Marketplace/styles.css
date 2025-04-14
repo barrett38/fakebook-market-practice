@@ -140,6 +140,13 @@ body {
   color: var(--Facebook-Text-Gray);
 }
 
+.sidebar ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 /* Mobile Styles */
 
 @media (max-width: 768px) {
