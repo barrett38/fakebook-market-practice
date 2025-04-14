@@ -18,6 +18,8 @@ import unselectedSellingIcon from "./pictures/unselected/unsel-selling.png";
 const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
+  const facebookBlue = "#1877f2";
+
   const handleItemClick = (item) => {
     setSelectedItem(item);
   };
@@ -31,7 +33,12 @@ const Sidebar = () => {
         className="search-bar"
       />
       <ul>
-        <li onClick={() => handleItemClick("Browse All")}>
+        <li
+          onClick={() => handleItemClick("Browse All")}
+          style={{
+            color: selectedItem === "Browse All" ? facebookBlue : "black",
+          }}
+        >
           {selectedItem === "Browse All" ? (
             <img src={selectedBrowseAllIcon} alt="Selected" />
           ) : (
@@ -39,7 +46,12 @@ const Sidebar = () => {
           )}
           Browse All
         </li>
-        <li onClick={() => handleItemClick("Notifications")}>
+        <li
+          onClick={() => handleItemClick("Notifications")}
+          style={{
+            color: selectedItem === "Notifications" ? facebookBlue : "black",
+          }}
+        >
           {selectedItem === "Notifications" ? (
             <img src={selectedNotificationsIcon} alt="Selected" />
           ) : (
@@ -47,7 +59,12 @@ const Sidebar = () => {
           )}
           Notifications
         </li>
-        <li onClick={() => handleItemClick("Inbox")}>
+        <li
+          onClick={() => handleItemClick("Inbox")}
+          style={{
+            color: selectedItem === "Inbox" ? facebookBlue : "black",
+          }}
+        >
           {selectedItem === "Inbox" ? (
             <img src={selectedInboxIcon} alt="Selected" />
           ) : (
@@ -55,7 +72,12 @@ const Sidebar = () => {
           )}
           Inbox
         </li>
-        <li onClick={() => handleItemClick("Buying")}>
+        <li
+          onClick={() => handleItemClick("Buying")}
+          style={{
+            color: selectedItem === "Buying" ? facebookBlue : "black",
+          }}
+        >
           {selectedItem === "Buying" ? (
             <img src={selectedBuyingIcon} alt="Selected" />
           ) : (
@@ -63,7 +85,12 @@ const Sidebar = () => {
           )}
           Buying
         </li>
-        <li onClick={() => handleItemClick("Selling")}>
+        <li
+          onClick={() => handleItemClick("Selling")}
+          style={{
+            color: selectedItem === "Selling" ? facebookBlue : "black",
+          }}
+        >
           {selectedItem === "Selling" ? (
             <img src={selectedSellingIcon} alt="Selected" />
           ) : (

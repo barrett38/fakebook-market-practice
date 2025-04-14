@@ -147,6 +147,15 @@ body {
   vertical-align: middle;
 }
 
+.sidebar ul li {
+  color: black;
+  cursor: pointer;
+}
+
+.sidebar ul li.selected {
+  color: var(--Facebook-Blue);
+}
+
 /* Mobile Styles */
 
 @media (max-width: 768px) {
