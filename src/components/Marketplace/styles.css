@@ -8,6 +8,10 @@
   --Facebook-Green: #65b543;
 }
 
+* {
+  user-select: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
